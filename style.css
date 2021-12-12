@@ -1,0 +1,115 @@
+:root{
+    --violet:hsl(257, 40%, 49%);
+    --magenta:hsl(300, 69%, 71%);
+    --white:hsl(300,100%,100%);
+    --poppins:'Poppins', sans-serif;
+    --opensans:'Open Sans', sans-serif;
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+.hero{
+    height:100vh;
+    padding:0 5vw;
+    background-color:var(--violet);
+    background-image: url(images/bg-desktop.svg);
+    background-size: cover;
+    position: relative;
+    display:flex;
+    flex-direction: column;
+}
+
+header{
+    height:15vh;
+    display:flex;
+    align-items: flex-end;
+}
+
+.logo{
+    width: 15vw;
+}
+.logo img{
+    width:100%;
+}
+
+.container{
+    display:flex;
+    flex-direction: row;
+    height:85vh;
+}
+.img{
+    width:50vw;
+    height:100%;
+    display:flex;
+    align-items: center;
+}
+.img img{
+    width:100%;
+}
+
+.text-content{
+    width:47vw;
+    padding-left:3vw;
+    padding-top:18vh;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+h1{
+    font-family: var(--poppins);
+    font-weight:600;
+    font-size: 3rem;
+    line-height: 4rem;
+    color:var(--white);
+    margin-bottom: 40px;
+    max-width: 17ch;
+}
+
+p{
+    font-family: var(--opensans);
+    font-size: 1.2rem;
+    color:var(--white);
+    font-weight: 400;
+    margin-bottom: 24px;
+    max-width: 50ch;
+}
+
+a.btn{
+    background-color: var(--magenta);
+    padding:20px 80px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color:var(--white);
+    font-family: var(--poppins);
+    border-radius: 40px;
+    box-shadow: rgba(0, 0, 0, .1) 0 3px 5px -1px,rgba(0, 0, 0, .2) 0 6px 10px 0,rgba(0, 0, 0, .2) 0 1px 18px 0;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+a.btn:hover{
+    box-shadow: rgba(0, 0, 0, .8) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    transition: all .2s ease-in-out;
+}
+
+footer{
+    height:4vh;
+    text-align: center;
+    margin:0 auto;
+}
+
+.socials{
+    display:flex;
+    flex-direction: row;
+    position:absolute;
+    right:5vw;
+    bottom:4vh;
+}
+.socials img{
+    height:5vh;
+    margin:0 6px;
+    filter:invert(1);
+}
